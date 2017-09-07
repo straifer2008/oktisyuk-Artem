@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smile Porject</title>
+    <!--Add styles-->
+    <link rel="stylesheet" href="css/build.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 left">
+                        <p class="phone">Casom care. <span>888-23-4567</span></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 right">
+                        <div class="currency">
+                            <ul class="dropdown">
+                                <li id="dLabel" data-toggle="dropdown">
+                                    $ US
+                                    <span class="caret"></span>
+                                </li>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li><a href="#"><span>$ US</span></a></li>
+                                    <li><a href="#"><span>$ US</span></a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="account">
+                            <a href="#">
+                                <p>
+                                    <i class="fa fa-user"></i>
+                                    My account
+                                </p>
+                            </a>
+                        </div>
+                        <div class="search">
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Menu</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">New <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">New 1</a></li>
+                                    <li><a href="#">New 2</a></li>
+                                    <li><a href="#">New 3</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Primeri New</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Designers</a></li>
+                            <li><a href="#">Woman</a></li>
+                            <li><a href="#">Man</a></li>
+                            <li><a href="#">Clearence</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    <!--<div class="header-top black-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12 header-top-left left">
+                    <p class="phone">Casom care. <span>888-23-4567</span></p>
+                </div>
+                <div class="col-lg-6 col-md-6  col-xs-12 header-top-right">
+                    <div class="right">
+                        <ul class="account">
+                            <li class="dropdown currency add-right-border">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">&#036; us<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">&#8372; ua</a></li>
+                                    <li><a href="#">&#128; eur</a></li>
+                                </ul>
+                            </li>
+                            <li class="my-account add-right-border">
+                                <a href="#">
+                                    <i class="fa fa-user" aria-hidden="true"></i>my account
+                                </a>
+                            </li>
+                            <li class="search add-right-border">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container header-bottom">
+        <div class="row">
+            <div class="col-lg-2 col-sm-6 col-xs-12">
+                <div class="logotype">
+                    <a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-lg-push-6 col-sm-6 col-xs-12">
+                <div class="carts">
+                    <div class="user-cart">
+                        <div class="dropdown cart-dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Your cart <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a href="#">cart 1</a></li>
+                                <li><a href="#">cart 2</a></li>
+                            </ul>
+                        </div>
+                        <div class="items">
+                            <i class="fa fa-shopping-bag"></i>
+                            <div class="items-block">
+                                <span class="items-in">0</span> Items | &#036; <span class="cost">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-lg-pull-3 col-sm-12 col-xs-12">
+                <div class="menu">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#navbar-main">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="navbar-text hidden-lg">Menu</span>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-main">
+                            <ul class="navbar-nav nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">new <span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                        <li><a class="dropdown-item" href="#">New 1</a></li>
+                                        <li><a class="dropdown-item" href="#">New 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">designers</a></li>
+                                <li><a href="#">women</a></li>
+                                <li><a href="#">men</a></li>
+                                <li><a href="#">clearence</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</header>
+
+<!--Slider-->
+    <section class="carusel">
+        <div class="owl-carousel owl-theme slider-top">
+            <div class="carusel-items">
+                <img src="img/carusel/1.png" alt="1">
+            </div>
+            <div class="carusel-items">
+                <img src="img/carusel/1.png" alt="2">
+            </div>
+            <div class="carusel-items">
+                <img src="img/carusel/1.png" alt="3">
+            </div>
+            <div class="carusel-items">
+                <img src="img/carusel/1.png" alt="4">
+            </div>
+            <div class="carusel-items">
+                <img src="img/carusel/1.png" alt="5">
+            </div>
+        </div>
+        <div class="time-line"></div>
+    </section>
+
+<!--sign in block-->
+    <section class="sign">
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="email">
+                            <label>Stay updated</label>
+                            <input class="mail" type="email" placeholder="Your email address">
+                            <input class="submit" type="submit" value="+">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="social">
+                            <ul class="find-us">
+                                <span>Find us</span>
+                                <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="wraper-grid">
+                    <div class="large-col large-left">
+                        <a href="#"><img src="img/bestOutfist.png" alt=""></a>
+                    </div>
+                    <div class="large-col large-right">
+                        <div class="medium-col medium-top">
+                            <a href="#"><img src="img/toDial.png" alt=""></a>
+                        </div>
+                        <div class="medium-col medium-botom">
+                            <div class="small-col">
+                                <a href="#"><img src="img/bestsellers.png" alt=""></a>
+                            </div>
+                            <div class="small-col">
+                                <a href="#"><img src="img/falLater.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="products">
+            <div class="owl-carousel owl-theme  product-carusel">
+                <div class="product-item"><img src="img/products/1.png" alt="1">
+                    <div class="product-content">
+                        <p>MIMOSA LACE DRESS</p>
+                        <p>$76.95</p>
+                        <button>add to card <span><i class="fa fa-plus"></i></span></button>
+                    </div>
+                </div>
+                <div class="product-item"><img src="img/products/2.png" alt="2">
+                    <div class="product-content">
+                        <p>MIMOSA LACE DRESS</p>
+                        <p>$76.95</p>
+                        <button>add to card <span><i class="fa fa-plus"></i></span></button>
+                    </div>
+                </div>
+                <div class="product-item"><img src="img/products/3.png" alt="3">
+                    <div class="product-content">
+                        <p>MIMOSA LACE DRESS</p>
+                        <p>$76.95</p>
+                        <button>add to card <span><i class="fa fa-plus"></i></span></button>
+                    </div>
+                </div>
+                <div class="product-item"><img src="img/products/4.png" alt="4">
+                    <div class="product-content">
+                        <p>MIMOSA LACE DRESS</p>
+                        <p>$76.95</p>
+                        <button>add to card <span><i class="fa fa-plus"></i></span></button>
+                    </div>
+                </div>
+                <div class="product-item"><img src="img/products/1.png" alt="5">
+                    <div class="product-content">
+                        <p>MIMOSA LACE DRESS</p>
+                        <p>$76.95</p>
+                        <button>add to card <span><i class="fa fa-plus"></i></span></button>
+                    </div>
+                </div>
+                <div class="product-item"><img src="img/products/2.png" alt="6">
+                    <div class="product-content">
+                        <p>MIMOSA LACE DRESS</p>
+                        <p>$76.95</p>
+                        <button>add to card <span><i class="fa fa-plus"></i></span></button>
+                    </div>
+                </div>
+                <div class="product-item"><img src="img/products/3.png" alt="7">
+                    <div class="product-content">
+                        <p>MIMOSA LACE DRESS</p>
+                        <p>$76.95</p>
+                        <button>add to card <span><i class="fa fa-plus"></i></span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clearence">
+            <div class="container relative">
+                <div class="clearence-line">
+                    <img src="img/clearence.png" alt="clearence">
+                    <div class="line"></div>
+                </div>
+                <div class="clearence-product">
+                    <div class="col-lg-3">
+                        <div class="clearence-product-item"><img src="img/products/2.png" alt="1">
+                            <div class="product-content">
+                                <p>Nadia dress</p>
+                                <p>65.45</p>
+                                <button>add to card<span><i class="fa fa-plus"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="clearence-product-item"><img src="img/products/2.png" alt="2">
+                            <div class="product-content">
+                                <p>Nadia dress</p>
+                                <p>65.45</p>
+                                <button>add to card<span><i class="fa fa-plus"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="clearence-product-item"><img src="img/products/2.png" alt="3">
+                            <div class="product-content">
+                                <p>Nadia dress</p>
+                                <p>65.45</p>
+                                <button>add to card<span><i class="fa fa-plus"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="clearence-product-item"><img src="img/products/2.png" alt="4">
+                            <div class="product-content">
+                                <p>Nadia dress</p>
+                                <p>65.45</p>
+                                <button>add to card<span><i class="fa fa-plus"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brands">
+            <div class="brands-top">
+                <div class="brand-line"></div>
+                <p>Favorite brands</p>
+                <div class="brand-line"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <ul class="brands-content">
+                        <li><a href="#"><img src="img/brands/addict.png" alt="1"></a></li>
+                        <li><a href="#"><img src="img/brands/abandon.png" alt="2"></a></li>
+                        <li><a href="#"><img src="img/brands/addidas.png" alt="3"></a></li>
+                        <li><a href="#"><img src="img/brands/boyLondon.png" alt="4"></a></li>
+                        <li><a href="#"><img src="img/brands/converce.png" alt="5"></a></li>
+                        <li><a href="#"><img src="img/brands/kalvinClein.png" alt="6"></a></li>
+                        <li><a href="#"><img src="img/brands/edwin.png" alt="7"></a></li>
+                        <li><a href="#"><img src="img/brands/crenson.png" alt="8"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+        </section>
+
+        <section  class="about">
+            <div class="container">
+                <div class="row">
+                    <p class="about-title">About lookShop</p>
+                </div>
+                <div class="row">
+                    <p class="about-content">
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="credit-carts">
+            <p class="cart-text">We accept</p>
+            <ul class="carts">
+                <li><a href="#"><span class="card visa"></span></a></li>
+                <li><a href="#"><span class="card mastercard"></span></a></li>
+                <li><a href="#"><span class="card paypal"></span></a></li>
+                <li><a href="#"><span class="card main-express"></span></a></li>
+                <li><a href="#"><span class="card visa-electron"></span></a></li>
+                <li><a href="#"><span class="card laser"></span></a></li>
+                <li><a href="#"><span class="card maestro"></span></a></li>
+                <li><a href="#"><span class="card delta"></span></a></li>
+                <li><a href="#"><span class="card solo"></span></a></li>
+                <li><a href="#"><span class="card idea"></span></a></li>
+                <li><a href="#"><span class="card dik"></span></a></li>
+            </ul>
+        </section>
+    </main>
+
+<!--footer-->
+   <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <ul>
+                            <li><p class="title-footer-top">Customer Service</p></li>
+                            <li><a href="#"><span>Contact</span></a></li>
+                            <li><a href="#"><span>FAQ</span></a></li>
+                            <li><a href="#"><span>Terms of payment</span></a></li>
+                            <li><a href="#"><span>Terms of sale</span></a></li>
+                            <li><a href="#"><span>Delivery terms and conditions</span></a></li>
+                            <li><a href="#"><span>Returns and Refunds</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <ul>
+                            <li><p class="title-footer-top">Information</p></li>
+                            <li><a href="#"><span>Affiliate</span></a></li>
+                            <li><a href="#"><span>Cookies</span></a></li>
+                            <li><a href="#"><span>How to Shop</span></a></li>
+                            <li><a href="#"><span>About Nelly</span></a></li>
+                            <li><a href="#"><span>Investor relations</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <ul>
+                            <li><p class="title-footer-top">Campaigns</p></li>
+                            <li><a href="#"><span>Evening dresses</span></a></li>
+                            <li><a href="#"><span>Makeup</span></a></li>
+                            <li><a href="#"><span>Fashion forward</span></a></li>
+                            <li><a href="#"><span>training clothes</span></a></li>
+                            <li><a href="#"><span>Special Occasion Dresses</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <ul>
+                            <li><p class="title-footer-top">Stores</p></li>
+                            <li><a href="#"><span>Paris</span></a></li>
+                            <li><a href="#"><span>New York</span></a></li>
+                            <li><a href="#"><span>London</span></a></li>
+                            <li><a href="#"><span>Madrid</span></a></li>
+                            <li><a href="#"><span>Tokio</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="title-footer-top">Social</p>
+                        <ul class="soc-footer">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                        <ul class="soc-footer">
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vine"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 secured">
+                        <img src="img/secured.png" alt="secured">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <ul>
+                            <li><a href="#">Privacy & Cookies</a></li>
+                            <li><a href="#"><span>|</span></a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#"><span>|</span></a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#"><span>|</span></a></li>
+                            <li><a href="#">Store Directory</a></li>
+                            <li><a href="#"><span>|</span></a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="text-footer-developt">© LookShop.com<br /> All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!--one compile script with Jquery, bootstrap & main.js-->
+    <script src="js/build.min.js"></script>
+</body>
+</html>
