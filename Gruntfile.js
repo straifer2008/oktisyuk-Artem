@@ -90,4 +90,5 @@ module.exports = function (grunt) {
 
     // Default task(s).
     grunt.registerTask('default', ['less', 'autoprefixer', 'cssmin', 'uglify', 'browserify', 'express', 'watch']);
+    grunt.registerTask('up', ['less', 'autoprefixer', 'cssmin', 'uglify', 'browserify', 'express', 'watch']);
 };
